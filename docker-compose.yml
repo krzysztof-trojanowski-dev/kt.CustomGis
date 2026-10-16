@@ -1,0 +1,22 @@
+services:
+  postgres:
+    image: postgres:17.2
+    environment:
+      POSTGRES_DB: ps_db
+      POSTGRES_USER: ps_user
+      POSTGRES_PASSWORD: my_secret_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgresdata:/var/lib/postgresql/data
+    deploy:
+      resources:
+        limits:
+          cpus: "2"
+          memory: 4G
+        reservations:
+          cpus: "1"
+          memory: 2G
+
+volumes:
+  postgresdata:

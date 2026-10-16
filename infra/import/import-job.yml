@@ -1,0 +1,45 @@
+# Usage (from repo root):
+#   .\infra\import\build-image.ps1                      # build and push osm-import to localhost:5000
+#   .\infra\import\sync-data.ps1                        # copy infra\data2import into the kind node
+#   kubectl apply -f infra\data2import-volume.yml
+#   kubectl delete job osm-import --ignore-not-found
+#   kubectl apply -f infra\import\import-job.yml
+#   kubectl logs -f job/osm-import
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: osm-import
+spec:
+  backoffLimit: 0
+  template:
+    spec:
+      restartPolicy: Never
+      volumes: []
+      containers:
+        - name: import
+          image: registry:5000/osm-import:1.0
+          imagePullPolicy: IfNotPresent
+          env:
+            - name: PBF_FILE
+              value: /data/dolnoslaskie-261011.osm.pbf
+            - name: PGHOST
+              value: postgres
+            - name: PGDATABASE
+              valueFrom:
+                configMapKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_DB
+            - name: PGUSER
+              valueFrom:
+                configMapKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_USER
+            - name: PGPASSWORD
+              valueFrom:
+                configMapKeyRef:
+                  name: postgres-secret
+                  key: POSTGRES_PASSWORD
+          resources:
+            limits:
+              memory: "4Gi"
+

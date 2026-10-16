@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kt.CustomGis.App", "kt.CustomGis.App\kt.CustomGis.App.csproj", "{3EA83B4E-68F3-4DB4-90DA-B7A4E25BAABC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kt.CustomGis.Core", "kt.CustomGis.Core\kt.CustomGis.Core.csproj", "{F6931B64-81DC-4D34-8E36-D201B2A10EE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kt.CustomGis.Data", "kt.CustomGis.Data\kt.CustomGis.Data.csproj", "{214E204F-99BD-490F-9696-BC476CF8001B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3EA83B4E-68F3-4DB4-90DA-B7A4E25BAABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EA83B4E-68F3-4DB4-90DA-B7A4E25BAABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EA83B4E-68F3-4DB4-90DA-B7A4E25BAABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EA83B4E-68F3-4DB4-90DA-B7A4E25BAABC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6931B64-81DC-4D34-8E36-D201B2A10EE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6931B64-81DC-4D34-8E36-D201B2A10EE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6931B64-81DC-4D34-8E36-D201B2A10EE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6931B64-81DC-4D34-8E36-D201B2A10EE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{214E204F-99BD-490F-9696-BC476CF8001B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{214E204F-99BD-490F-9696-BC476CF8001B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{214E204F-99BD-490F-9696-BC476CF8001B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{214E204F-99BD-490F-9696-BC476CF8001B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
