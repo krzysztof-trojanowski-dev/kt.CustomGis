@@ -1,10 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.10.12306.391 oobstable
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kt.CustomGis.App", "kt.CustomGis.App\kt.CustomGis.App.csproj", "{3EA83B4E-68F3-4DB4-90DA-B7A4E25BAABC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kt.CustomGis.Core", "kt.CustomGis.Core\kt.CustomGis.Core.csproj", "{F6931B64-81DC-4D34-8E36-D201B2A10EE1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kt.CustomGis.Data", "kt.CustomGis.Data\kt.CustomGis.Data.csproj", "{214E204F-99BD-490F-9696-BC476CF8001B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kt.CustomGis.Core.Tests", "kt.CustomGis.Core.Tests\kt.CustomGis.Core.Tests.csproj", "{4092116D-436C-4666-BF02-48FC0E6B2AC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +29,12 @@ Global
 		{214E204F-99BD-490F-9696-BC476CF8001B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{214E204F-99BD-490F-9696-BC476CF8001B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{214E204F-99BD-490F-9696-BC476CF8001B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4092116D-436C-4666-BF02-48FC0E6B2AC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4092116D-436C-4666-BF02-48FC0E6B2AC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4092116D-436C-4666-BF02-48FC0E6B2AC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4092116D-436C-4666-BF02-48FC0E6B2AC7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
