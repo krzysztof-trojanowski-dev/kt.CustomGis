@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kt.CustomGis.Data", "kt.Cus
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kt.CustomGis.Core.Tests", "kt.CustomGis.Core.Tests\kt.CustomGis.Core.Tests.csproj", "{4092116D-436C-4666-BF02-48FC0E6B2AC7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "kt.CustomGis.App.Tests", "kt.CustomGis.App.Tests\kt.CustomGis.App.Tests.csproj", "{7E608642-4B14-43A7-B5C9-B3D8F53E6554}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{091D4D20-D8AE-4252-B400-D6F690C7810D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,8 +37,19 @@ Global
 		{4092116D-436C-4666-BF02-48FC0E6B2AC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4092116D-436C-4666-BF02-48FC0E6B2AC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4092116D-436C-4666-BF02-48FC0E6B2AC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7E608642-4B14-43A7-B5C9-B3D8F53E6554}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7E608642-4B14-43A7-B5C9-B3D8F53E6554}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7E608642-4B14-43A7-B5C9-B3D8F53E6554}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7E608642-4B14-43A7-B5C9-B3D8F53E6554}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4092116D-436C-4666-BF02-48FC0E6B2AC7} = {091D4D20-D8AE-4252-B400-D6F690C7810D}
+		{7E608642-4B14-43A7-B5C9-B3D8F53E6554} = {091D4D20-D8AE-4252-B400-D6F690C7810D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D4E80A50-8F03-468D-97DD-CDD0CA1A6F34}
 	EndGlobalSection
 EndGlobal
